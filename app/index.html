@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;800&family=Roboto:wght@100;300;400;500;900&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="bg">
+    </div>
+    <main class="fertilizer">
+        <div class="container">
+            <div class="about">
+                <h1 class="about-title">ДОБРИВО</h1>
+                <div class="about__nav">
+                    <ul class="about__list">
+                        <li class="about__item">оплата и доставка</li>
+                        <li class="about__item">новости</li>
+                        <li class="about__item">справочник</li>
+                        <li class="about__item">сертификаты</li>
+                    </ul>
+                    <select name="language" id="language">
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </div>
+            </div>
+            <header class="header">
+                <ul class="header__list">
+                    <li class="header__item">нагро-удобрение</li>
+                    <li class="header__item">биодизель</li>
+                    <li class="header__item">силко</li>
+                    <li class="header__item">интернет-магазин</li>
+                    <li class="header__item">вопросы-ответы</li>
+                    <li class="header__item">контакты</li>
+                    <li class="header__item cart">корзина</li>
+                </ul>
+            </header>
+            <div class="main-inner">
+
+                <section class="nano">
+                    <h2 class="nano__title">
+                        <span>ОРГАНИЧЕСКОЕ</span>
+                        <span>НАНО-УДОБНИЕ</span>
+                        <span>ДОБРИВО</span>
+                    </h2>
+                    <div class="nano-inner">
+                        <div>
+                            <img src="./img/photo2.webp" alt="" width="270px">
+                        </div>
+                        <div class="nano__progress">
+                            <article class="nano__progress-block">
+                                <img class="nano__block-img" src="./img/star.webp" alt="star" width="40px" height="40px">
+                                <div class="nano__info">
+                                    <h3 class="nano__info-subtitle">ПРИРОСТ УРОЖАЯ</h3>
+                                    <span class="nano__info-desc">в сравнении с химическим удобрением</span>
+                                    <span class="nano__info-discount">30%-250%</span>
+                                </div>
+                            </article>
+                            <article class="nano__progress-block">
+                                <img class="nano__block-img" src="./img/star.webp" alt="star" width="40px" height="40px">
+                                <div class="nano__info">
+                                    <h3 class="nano__info-subtitle">ПРИРОСТ УРОЖАЯ</h3>
+                                    <span class="nano__info-desc">химических удобрений в хозяйстве</span>
+                                    <span class="nano__info-discount">до 70%</span>
+                                </div>
+                            </article>
+                            <article class="nano__progress-block">
+                                <img class="nano__block-img" src="./img/star.webp" alt="star" width="40px" height="40px">
+                                <div class="nano__info">
+                                    <h3 class="nano__info-subtitle">ПРИРОСТ УРОЖАЯ</h3>
+                                    <span class="nano__info-desc">системы растений при использовании</span>
+                                    <span class="nano__info-discount">в 3-10раз</span>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="learn-more">
+                        <h2 class="learn-more-subtitle">
+                            <p>УЗНАЙТЕ</p> О НАГРО БОЛЬШЕ!</h2>
+                        <button class="learn-more-btn">УЗНАТЬ БОЛЬШЕ</button>
+                    </div>
+                </section>
+                <section class="calc">
+                    <div class="calc-inner">
+                        <h2 class="calc__title">посчитайте прибыль</h2>
+                        <h3 class="calc__subtitle"><span>ДОБРИВО</span> ЭФФЕКТИВНЕЕ ХИМИИ</h3>
+                        <form class="calc__form">
+                            <fieldset class="calc__fieldset">
+                                <div class="calc__form-group">
+                                    <label class="calc__label" for="culture">Выберите культуру</label>
+                                </div>
+                                <select class="calc__select" name="" id="culture">
+                                        <option value="" selected disabled>Пшеница  3100 грн / т</option>
+                                        <option value="2100">Пшеница  2100 грн / т</option>
+                                        <option value="1100">Пшеница  1100 грн / т</option>
+                                        <option value="500">Пшеница  500 грн / т</option>
+                                    </select>
+                                <div class="calc__form-group">
+                                    <label class="calc__label" for="yield">Урожайность, ц/га</label>
+                                    <input class="calc__input" type="text" id="yield" placeholder="20">
+                                    <span class="validation-error-yield">not a number</span>
+                                </div>
+                                <div class="calc__form-group">
+                                    <label class="calc__label" class="form-group__label" for="cost-of-fertilizer">Стоимость хим. удобрения, грн/га</label>
+                                    <input class="calc__input" type="text" id="cost-of-fertilizer" placeholder="20">
+                                    <span class="validation-error-cost show-eroor">not a number</span>
+                                </div>
+                                <div class="calc__form-group">
+                                    <label class="calc__label" for="sown-area">Посевная площадь, га</label>
+                                    <input class="calc__input" type="text" id="sown-area" placeholder="10">
+                                    <span class="validation-error-sown show-eroor">not a number</span>
+                                </div>
+                            </fieldset>
+                            <div class="calc-price-wrapper">
+                                <h3 class="calc__price-subtitle">Прибыль от ДОБРИВА</h3>
+                                <span class="calc__price">00.00</span>
+                                <span>грн</span>
+                            </div>
+                        </form>
+                </section>
+                </div>
+            </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
