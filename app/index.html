@@ -12,22 +12,38 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body scroll="no" style="overflow-x: hidden">
     <div class="bg">
     </div>
 
     <main class="fertilizer">
-
+        <div class="fade">
+            <div>
+                <img src="./img/combine.webp" class="combine-photo" alt="combine">
+            </div>
+            <div>
+                <img src="./img/combine2.jpeg" class="combine-photo" alt="combine">
+            </div>
+            <div>
+                <img src="./img/combine.webp" class="combine-photo" alt="combine">
+            </div>
+            <div>
+                <img src="./img/combine2.jpeg" class="combine-photo" alt="combine">
+            </div>
+        </div>
         <div class="container">
+
             <div class="about">
                 <h1 class="about-title">ДОБРИВО</h1>
                 <div class="about__nav">
                     <ul class="about__list">
+
                         <li class="about__item">оплата и доставка</li>
                         <li class="about__item">новости</li>
                         <li class="about__item">справочник</li>
                         <li class="about__item">сертификаты</li>
                     </ul>
+
                     <select name="language" id="language">
                         <option value="ru">RU</option>
                         <option value="en">EN</option>
@@ -101,8 +117,8 @@
                                 <div class="calc__form-group">
                                     <label class="calc__label" for="culture">Выберите культуру</label>
                                 </div>
-                                <select class="calc__select" name="" id="culture">
-                                        <option value="" selected disabled>Пшеница  3100 грн / т</option>
+                                <select class="calc__select" name="culture" id="culture">
+                                        <option value="" selected>Выберите опцию</option>
                                         <option value="2100">Пшеница  2100 грн / т</option>
                                         <option value="1100">Пшеница  1100 грн / т</option>
                                         <option value="500">Пшеница  500 грн / т</option>

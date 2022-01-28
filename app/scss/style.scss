@@ -15,28 +15,20 @@
         max-width: 1160px;
         margin: 0 auto 0 auto;
         padding-top: 5%;
+        position: relative;
     }
     
     .fertilizer {
         background: url('../img/photo1.webp') no-repeat;
-        height: 100vh;
+        height: 110vh;
         width: 100vw;
         padding: 0;
         margin: 0;
         background-size: 100%;
     }
     
-    // .slide-first {
-    //     background: url('../img/combine2.jpeg') no-repeat;
-    //     height: 400px;
-    //     width: 100vw;
-    //     padding: 0;
-    //     margin: 0;
-    //     background-size: 100%;
-    //     background-position: center;
-    //     // z-index: 0;
-    // }
     .header {
+        box-shadow: 0px 5px 12px 8px rgba(34, 60, 80, 0.2);
         &__list {
             display: flex;
             justify-content: space-between;
@@ -228,7 +220,7 @@
     
     .bg {
         background: url('../img/photo3.jpeg') no-repeat;
-        height: 100vh;
+        height: 102vh;
         width: 100vw;
         padding: 0;
         margin: 0;
@@ -236,6 +228,7 @@
         z-index: -11;
         position: absolute;
         right: 0;
+        background-position: 1000px;
     }
     
     .learn-more {
@@ -297,11 +290,24 @@
     }
     
     .fade .combine-photo {
-        object-fit: revert;
-        position: absolute;
         z-index: 0;
-        // height: 47%;
+        height: 42%;
         left: 0;
         top: 0;
         width: 100vw;
+        object-fit: cover;
+    }
+    
+    .fade {
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .slick-track {
+        display: flex;
+    }
+    
+    .calc__select option {
+        color: red;
+        background-color: red;
     }
