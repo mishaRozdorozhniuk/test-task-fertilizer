@@ -20,12 +20,22 @@
     .fertilizer {
         background: url('../img/photo1.webp') no-repeat;
         height: 100vh;
-        width: 75vw;
+        width: 100vw;
         padding: 0;
         margin: 0;
         background-size: 100%;
     }
     
+    // .slide-first {
+    //     background: url('../img/combine2.jpeg') no-repeat;
+    //     height: 400px;
+    //     width: 100vw;
+    //     padding: 0;
+    //     margin: 0;
+    //     background-size: 100%;
+    //     background-position: center;
+    //     // z-index: 0;
+    // }
     .header {
         &__list {
             display: flex;
@@ -284,4 +294,14 @@
     
     .hide-error {
         display: none;
+    }
+    
+    .fade .combine-photo {
+        object-fit: revert;
+        position: absolute;
+        z-index: 0;
+        // height: 47%;
+        left: 0;
+        top: 0;
+        width: 100vw;
     }

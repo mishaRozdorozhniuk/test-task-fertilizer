@@ -18,33 +18,6 @@ gulp.task('html', function() {
         .pipe(browserSync.reload({ stream: true }))
 })
 
-// gulp.task('img', function() {
-//     return gulp.src('src/images/*')
-//         .pipe(imagemin())
-//         .pipe(imagemin([
-//             imagemin.gifsicle({ interlaced: true }),
-//             imagemin.mozjpeg({ quality: 75, progressive: true }),
-//             imagemin.optipng({ optimizationLevel: 5 }),
-//             imagemin.svgo({
-//                 plugins: [
-//                     { removeViewBox: true },
-//                     { cleanupIDs: false }
-//                 ]
-//             })
-//         ]))
-//         .pipe(imagemin([
-//             imagemin.svgo({
-//                 plugins: [{
-//                     removeViewBox: true
-//                 }]
-//             })
-//         ], {
-//             verbose: true
-//         }))
-//         .pipe(gulp.dest('dist/images'))
-//         .pipe(browserSync.reload({ stream: true }))
-// })
-
 gulp.task('js', function() {
     return gulp.src('app/js/*.js')
         .pipe(browserSync.reload({ stream: true }))

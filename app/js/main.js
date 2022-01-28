@@ -1,3 +1,16 @@
+// $(document).ready(function() {
+//     $('.fade').slick({
+//         dots: true,
+//         infinite: true,
+//         speed: 700,
+//         autoplay: true,
+//         arrows: false,
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//     });
+
+// });
+
 function displayNum() {
     $("#yield").keyup(calc);
     $("#cost-of-fertilizer").keyup(calc);
